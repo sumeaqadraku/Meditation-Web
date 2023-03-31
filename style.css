@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0
+   font-family:'Montserrat Alternates', sans-serif;
+
+}
+
+h1{
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo{
+  width:180px;
+  height:130px;
+  cursor: pointer;
+
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    
+  }
+  nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin-left: 40px;
+    margin-right:20px;
+    
+    
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color:rgb(1, 0, 0);
+    font-size:17px;
+    font-family:'Montserrat Alternates', sans-serif;
+    text-align: center;
+  }
+  ul{
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  
+  ul li{
+    list-style:none;
+    margin:0 20px;
+    transition:0.5s;
+  }
+  
+  ul li a{
+    display: block;
+    position:relative;
+    text-decoration:none;
+    padding:5px;
+    font-size:18px;
+    color:#fff;
+    
+    transition:0.5s;
+  }
+  
+  ul:hover li a{
+    transform:scale(1.5);
+    opacity:0.2;
+    filter:blur(5px);
+  }
+  
+  ul li a:hover{
+    transform:scale(2);
+    opacity:1;
+    filter:blur(0);
+    text-decoration:none;
+    color:#020202;
+  }
+  
+  ul li a:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#aeadad;
+    transition:0.5s;
+    transform-origin:right;
+    transform:scaleX(0);
+    z-index:-1;
+    
+  }
+ 
+  ul li a:hover:before{
+    transition:transform 0.5s;
+    transform-origin:left;
+    transform:scaleX(1);
+    
+  }
+  nav button{
+    width:140px;
+    text-align: center;
+    justify-content:space-between;
+    margin-left:120px;
+    border-radius: 50px;
+    
+  }
+  .container{
+    width:100%;
+    height:100vh;
+    padding-left: 0%;
+    padding-right: 0%;
+   /* background-image:url(Foto/mm1.jpeg);*/
+  
+  
+  
+    
+  }
+  .navbar{
+    height:14%;
+    display: flex;
+    align-items: center;
+    background-color:#000;
+    
+  }
+
+
+
+
+
+
+
+.row{
+    display:inline;
+    height:88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis:50%;
+    
+}
+
+h1{
+    margin-left:70px;
+    color:#fff;
+    font-size:40px;
+    font-family: 'Poppins', sans-serif;
+    font-size:130px;
+    display:block;
+    margin-top:-590px;
+}
+
+p{
+    margin-left:70px;
+    font-family:'Montserrat Alternates', sans-serif;
+    color:#fff;
+    margin-top:-10px;
+    font-size:20px;
+}
+
+h5{
+    font-family:'Montserrat Alternates', sans-serif;
+    text-align: center;
+    color:white;
+}
+
+button {
+    margin-left:80px;
+    width:250px;
+    height:40px;
+    color:#020202;
+    padding:12px 0;
+    font-size:20px;
+    line-height:0px;
+    background: #fff;
+    border-radius:20px;
+    margin-top:30px;
+    outline:none;
+    font-family:'Montserrat Alternates', sans-serif;}
+    
+    
+    
+    
+    .card{
+        
+        width:250px;
+        height:150px;
+        display:inline-block;
+        align-items: center;
+    justify-content: space-around;
+    border-radius:10px;
+    padding:15px 25px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin:10px 15px;
+    margin-left:90px;
+    font-size: 15px;
+    border: 2px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	transition: transform 0.5s;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+
+
+
+.card:hover{
+    transform:translateY(-10px)
+}
+
+
+.card:nth-child(1){
+    filter: hue-rotate(290deg);
+}
+
+.card:nth-child(3){
+    filter: hue-rotate(110deg);
+}
+
+.card:hover{
+    background: #03E9F4;
+	box-shadow: 0 0 5px #03E9F4, 0 0 25px #03E9F4, 0 0 50px #03E9F4, 0 0 200px #03E9F4;
+	color: #050801;
+}
+
+.card span{
+    display: block;
+	position: absolute;
+}
+
+.card span:nth-child(1){
+    animation: animate1 1s linear infinite;
+	background: linear-gradient(90deg, transparent, #03E9F4);
+	height: 2px;
+	left: -100%;
+	top: 0;
+	width: 100%;
+}
+
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+	}
+	50%, 100%{
+        left: 100%;	
+	}
+}
+
+.card span:nth-child(2){
+    animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+	background: linear-gradient(180deg, transparent, #03E9F4);
+	height: 100%;
+	top: -100%;
+	right: 0;
+	width: 2px;
+}
+
+@keyframes animate2{
+    0%{
+        top: -100%;
+	}
+	50%, 100%{
+        top: 100%;	
+	}
+}
+
+
+
+
